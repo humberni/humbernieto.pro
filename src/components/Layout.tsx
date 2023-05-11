@@ -18,7 +18,7 @@ interface Props {
 export function Layout({ children, meta: pageMeta }: Props) {
   const router = useRouter();
   const meta = {
-    title: "Humber Sanchez",
+    title: "Humber Nieto",
     description: "Developer - Apasionado por la tecnología",
     cardImage: "/images/avatar/avatar.png",
     ...pageMeta,
