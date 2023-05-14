@@ -1,37 +1,35 @@
 import Link from "next/link";
-import { FaGithub } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { IconGitHub, IconInstagram, IconTwitter } from "./Icons";
 
 const social = [
   {
     name: "twitter",
     href: "https://twitter.com/humberni",
-    icon: <FaTwitter size={25} />,
+    icon: <IconTwitter />,
   },
   {
     name: "github",
     href: "https://github.com/humberni",
-    icon: <FaGithub size={25} />,
+    icon: <IconGitHub />,
   },
   {
     name: "instagram",
     href: "https://instagram.com/humber_nieto",
-    icon: <FaInstagram size={25} />,
+    icon: <IconInstagram />,
   },
 ];
 export function Social() {
   return (
-    <div className="flex justify-center gap-6 max-w-[350px] mx-auto mt-12">
+    <div className="flex justify-center gap-8 px-6 lg-px-8 max-w-2xl mx-auto mt-20">
       {social.map(({ name, href, icon }) => (
         <Link
           key={name}
           href={href}
           title={name}
           target="_blank"
-          className="text-neutral-900 hover:text-indigo-500 dark:text-neutral-300 dark:hover:text-indigo-500"
+          className="text-zinc-900 hover:text-[#09E989] dark:text-zinc-300 dark:hover:text-[#09E989]"
         >
-          <div className="flex items-center justify-center">{icon}</div>
+          <div className="h-6 w-6 flex items-center justify-center">{icon}</div>
         </Link>
       ))}
     </div>

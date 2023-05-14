@@ -1,8 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-
 import { ReactNode } from "react";
-import { Footer, Navbar } from "./";
 
 type PageMeta = {
   title: string;
@@ -25,7 +23,7 @@ export function Layout({ children, meta: pageMeta }: Props) {
   };
 
   return (
-    <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-0 min-w-[350px]">
+    <div className="bg-white dark:bg-black">
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
@@ -46,9 +44,7 @@ export function Layout({ children, meta: pageMeta }: Props) {
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.cardImage} />
       </Head>
-      <Navbar />
       <main id="skip">{children}</main>
-      <Footer />
     </div>
   );
 }

@@ -14,7 +14,7 @@ export function Navbar() {
         >
           <Image
             className="h-12 w-auto m-2"
-            src="/images/logo/humber-logo.svg"
+            src="/images/logo/humber-black.svg"
             alt="Logo - Humber Nieto"
             width={512}
             height={512}

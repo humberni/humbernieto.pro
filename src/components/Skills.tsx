@@ -1,21 +1,28 @@
-import { useState } from "react";
 import { useTheme } from "next-themes";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import {
   atomDark,
-  oneLight,
+  prism,
 } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 export function Skills() {
   const { theme } = useTheme();
-  const syntaxHighlighterTheme = theme === "light" ? oneLight : atomDark;
+  const syntaxHighlighterTheme = theme === "light" ? prism : atomDark;
 
   return (
-    <div className="max-w-xl mx-auto mt-16 rounded-md" id="skills">
+    <div
+      className="px-6 lg-px-8 justify-center flex mx-auto mt-16 rounded-md"
+      id="skills"
+    >
       <SyntaxHighlighter
         language="tsx"
         style={syntaxHighlighterTheme}
-        customStyle={{ maxHeight: "100%", overflow: "auto" }}
+        customStyle={{
+          maxHeight: "100%",
+          overflow: "auto",
+          background: "none",
+          fontSize: "14px",
+        }}
       >
         {`
 export function Habilidades () {
