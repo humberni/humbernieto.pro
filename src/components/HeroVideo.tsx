@@ -18,7 +18,7 @@ export default function HeroVideo() {
         Su navegador no soporta la etiqueta de vídeo.
       </video>
       <div className="relative h-screen mx-auto ">
-        <div className="px-6 sm:px-6 lg:px-8 absolute bottom-24 lg:bottom-24">
+        <div className="px-6 sm:px-6 lg:px-8 absolute bottom-36 lg:bottom-24">
           <h1 className="md:max-w-2xl text-4xl md:text-5xl font-bold text-white">
             Humber Nieto
           </h1>
@@ -35,7 +35,7 @@ export default function HeroVideo() {
             sizes="100vw"
           />
         </div>
-        <div className="px-6 sm:px-6 lg:px-8 absolute right-0 bottom-6">
+        <div className="px-6 sm:px-6 lg:px-8 absolute right-0 bottom-20 lg:bottom-8">
           <Link href="#about" passHref legacyBehavior>
             <button className="border hover:bg-white text-white hover:text-black p-2 font-medium">
               <IconArrowDown />
