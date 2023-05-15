@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { IconGitHub, IconInstagram, IconTwitter } from "./Icons";
+import { IconGitHub, IconInstagram, IconTwitter } from "./icons";
 
 const social = [
   {
@@ -18,9 +18,9 @@ const social = [
     icon: <IconInstagram />,
   },
 ];
-export function Social() {
+export default function Social() {
   return (
-    <div className="flex justify-center gap-8 px-6 lg-px-8 max-w-2xl mx-auto mt-20">
+    <div className="flex justify-center gap-8 px-6 lg-px-8 max-w-2xl mx-auto my-20">
       {social.map(({ name, href, icon }) => (
         <Link
           key={name}

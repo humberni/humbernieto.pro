@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export function About() {
+export default function About() {
   return (
     <div
       className="px-6 lg-px-8 max-w-2xl mx-auto lg:flex items-center pt-24 gap-x-8"

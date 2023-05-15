@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { IconArrowDown } from "./Icons";
+import { IconArrowDown } from "./icons";
 
-export default function HeroVideo() {
+export default function Video() {
   return (
     <div className="relative w-full h-screen overflow-hidden bg-black">
       <video

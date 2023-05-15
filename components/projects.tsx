@@ -51,10 +51,10 @@ const projetcs = [
   },
 ];
 
-export function Projects() {
+export default function Projects() {
   return (
     <div className="px-6 lg-px-8 mx-auto" id="projects">
-      <h2 className="text-3xl font-bold pt-16">Proyectos recientes </h2>
+      <h2 className="text-2xl font-bold pt-16 text-zinc-900 dark:text-zinc-300">Proyectos recientes</h2>
 
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 w-full mt-16">
         {projetcs.map(({ title, href, description }) => (
