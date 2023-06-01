@@ -33,7 +33,7 @@ const projetcs = [
   {
     title: "La Rueca",
     description:
-      "Ecommerce de productos artesanales implementado sobre WordPress y WooCommerce.",
+      "Ecommerce de productos artesanales implementado con tecnología Shopify, React y Cloudflare",
     href: "https://larueca.pe/",
   },
   {
